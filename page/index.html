@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">]
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./images/urso pelucia.png" alt="Urso pelucia">
+        <h1>Brinquedos</h1>
+        <img src="./images/yoyo.png" alt="Yoyo">
+    </header>
+    <div class="meio">
+        <aside id="Vendas_new_vendas">
+            <h4>    </h4>
+            <form class="Form_new_venda">
+                <h4>Nova venda</h4>
+                <div class="mb-3">
+                  <label class="form-label">Id dos brinquedos vendidos</label>
+                  <h4 class="Ids_selecionados">.</h4>
+                  <button id="limpar_ids">limpar</button>
+                </div>
+
+                <div class="mb-3">
+                  <label class="form-label">Data</label>
+                  <input type="date" class="form-control" id="Input_data">
+                </div>
+
+
+                <button type="submit" class="btn btn-primary" id="Botao_submit_nova_venda">Enviar</button>
+            </form>
+            <h4>Vendas</h4>
+            <div class="Vendas">
+                
+            </div>
+        </aside>
+        <main >
+  
+            <div class="Brinquedos">
+
+            </div>
+            <aside id="Aside_brinq">
+                <form id="Form_New_Brinquedo">
+                    <h6>Novo Brinquedo</h6>
+                    <div class="mb-3">
+                      <label class="form-label">Nome Brinquedo</label>
+                      <input type="text" class="form-control" id="Input_brinquedo" placeholder="ex: Bola">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label">Preço</label>
+                      <input type="number" pattern="[0-9]+([.][0-9]+)?" min="0" step="any" class="form-control" id="Input_valor_brinquedo" placeholder="ex: 14.99">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Quantidade</label>
+                        <input type="number" class="form-control" id="Input_Quantidade" placeholder="ex:10">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Descricao</label>
+                        <input type="text" class="form-control" id="Input_Descricao" placeholder="ex:Bola laranja feita para esportes em quadra">
+                    </div>
+                    <button type="submit" class="btn btn-primary" id="Botao_submit_novo_brinquedo">Confirmar</button>
+                </form>
+            </aside>
+        </main>
+    </div>
+
+    
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
